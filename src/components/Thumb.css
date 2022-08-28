@@ -1,0 +1,35 @@
+.thumb{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    background-color: #FF6060;
+    border-radius: 10px;
+}
+
+.thumb__image{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.thumb__title{
+    position: absolute;
+    margin: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-align: left;
+    color: white;
+}
+
+.thumb__gradient{
+    position: absolute;
+    top: 0;
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}

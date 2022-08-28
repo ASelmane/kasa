@@ -1,0 +1,36 @@
+header{
+    width: 1240px;
+    display: flex;
+    margin: 40px auto 65px;
+    justify-content: space-between;
+
+}
+
+nav{
+    width: 300px;
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    width: 100%;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a:hover, a.active{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    text-align: right;
+    color: #FF6060;
+}
