@@ -12,9 +12,11 @@ const Dropdown = ({ title, children }) => {
                 <img className="dropdown__arrow" src={arrow} alt=""/>
             </div>
             <div className="dropdown__list">
-                {children.map((item, index) => (
+                {Array.isArray(children) ? (children.map((item, index) => (
                     <p className="dropdown__item" key={index}>{item}</p>
-                ))}
+                ))) : (
+                    <p className="dropdown__item">{children}</p>
+                )}
             </div>
         </div>
     );

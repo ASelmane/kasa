@@ -1,19 +1,22 @@
 header{
-    width: 1240px;
     display: flex;
-    margin: 40px auto 65px;
+    margin: 20px;
     justify-content: space-between;
 
 }
 
+header .logo{
+    width: 145px;
+}
+
 nav{
-    width: 300px;
+    width: 140px;
 }
 
 ul{
     display: flex;
-    justify-content: end;
-    gap: 60px;
+    justify-content: flex-end;
+    gap: 15px;
     width: 100%;
     padding: 0;
 }
@@ -27,10 +30,44 @@ a:hover, a.active{
 }
 
 a{
+    text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 142.6%;
     text-align: right;
     color: #FF6060;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        max-width: 1240px;
+        gap: 20px;
+        margin: 40px 100px 65px;
+        align-items: center;
+    }
+    
+    header .logo{
+        width: auto;
+    }
+    
+    nav{
+        width: 300px;
+    }
+    
+    ul{
+        gap: 60px;
+    }
+    
+    a{
+        text-transform: none;
+        text-decoration: none;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    header{
+        margin: 40px auto 65px;
+    }
 }

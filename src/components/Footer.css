@@ -1,21 +1,31 @@
 footer{
-    width: 99vw;
+    width: 100%;
     background-color: black;
     color: #fff;
     text-align: center;
     margin-top: 65px;
+    padding: 60px 0;
 }
 
 footer img{
-    margin-top: 66px;
     width: 122px;
     filter: saturate(0%) brightness(0%) invert(100%);
 }
 
 footer .rights{
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 142.6%;
-    padding: 30px 0;
+    padding-top: 30px;
     margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    footer{
+        padding: 63px 0 30px;
+    }
+    footer .rights{
+        font-size: 24px;
+        padding-top: 40px;
+    }
 }

@@ -6,21 +6,21 @@ const Carrousel = ({ children }) => {
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
     const next = () => {
-        if(currentIndex < children.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-        }
-        else {
-            setCurrentIndex(0);
-        }
+        setCurrentIndex((currentIndex) => {
+            if (currentIndex === children.length - 1) {
+                return 0;
+            }
+            return currentIndex + 1;
+        });
     };
 
     const prev = () => {
-        if(currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }
-        else {
-            setCurrentIndex(children.length - 1);
-        }
+        setCurrentIndex((currentIndex) => {
+            if (currentIndex === 0) {
+                return children.length - 1;
+            }
+            return currentIndex - 1;
+        });
     };
 
     return (

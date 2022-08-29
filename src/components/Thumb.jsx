@@ -5,7 +5,7 @@ import "./Thumb.css";
 const Thumb = ({ id, src, children }) => {
     return (
         <div className="thumb">
-            <Link to={"/Location?id=" + id }>
+            <Link to={"/Logement/" + id }>
                 <img className="thumb__image" src={src} alt=""/>
                 <div className="thumb__gradient"></div>
                 <h2 className="thumb__title">{children}</h2>

@@ -13,10 +13,14 @@
     border-radius: 25px;
 }
 
+.carrousel__control{
+    text-align: center;
+}
+
 .arrow_left{
     position: absolute;
     left: 25px;
-    top: 45%;
+    top: 40%;
     width: 80px;
     transform: rotate(90deg);
     cursor: pointer;
@@ -25,7 +29,7 @@
 .arrow_right{
     position: absolute;
     right: 25px;
-    top: 45%;
+    top: 40%;
     width: 80px;
     transform: rotate(-90deg);
     cursor: pointer;

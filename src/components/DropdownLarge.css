@@ -1,11 +1,12 @@
 .lg_dropdown{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 1023px;
+    margin: 32px auto;
     z-index: 100;
 }
 
 .lg_dropdown__header{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +16,7 @@
     border-radius: 10px;
     z-index: 10;
     cursor: pointer;
+    width: 983px;
 }
 
 .lg_dropdown__title{
@@ -23,13 +25,11 @@
     font-weight: 500;
     line-height: 142.6%;
     text-align: left;
+    color: white;
 }
 
 .lg_dropdown__list{
     display: none;
-    position: absolute;
-    top: 38px;
-    width: 983px;
     background: #F7F7F7;
     border-radius: 10px;
     color: #FF6060;
@@ -47,10 +47,6 @@
 
 .active .lg_dropdown__list{
     display: block;
-}
-
-.active .lg_dropdown__header{
-    margin-bottom: 146px;
 }
 
 .active .lg_dropdown__arrow{
