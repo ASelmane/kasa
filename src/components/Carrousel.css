@@ -1,8 +1,7 @@
 .carrousel{
     position: relative;
-    width: 1240px;
-    height: 415px;
-    
+    width: 100%;
+    height: 255px;
 }
 
 .carrousel__image{
@@ -10,35 +9,97 @@
     height: 100%;
     object-fit: cover;
     mix-blend-mode: normal;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .carrousel__control{
     text-align: center;
 }
 
-.arrow_left{
-    position: absolute;
-    left: 25px;
-    top: 40%;
-    width: 80px;
-    transform: rotate(90deg);
+.carrousel button{
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    outline: none;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 30%;
+    width: 200px;
+    height: 100px;
 }
 
-.arrow_right{
-    position: absolute;
-    right: 25px;
-    top: 40%;
-    width: 80px;
+.prev{
+    left: -45px;
+    transform: rotate(90deg);
+}
+
+.next{
+    right: -45px;
     transform: rotate(-90deg);
-    cursor: pointer;
+}
+
+.arrow{
+    width: 20px;
 }
 
 .carrousel__nb{
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 142.6%;
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1024px){
+    .carrousel{
+        height: 415px;
+        max-width: 1240px;
+    }
+
+    .carrousel__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: normal;
+        border-radius: 25px;
+    }
+
+    .carrousel__control{
+        text-align: center;
+    }
+
+    .carrousel button{
+        top: 20%;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .prev{
+        left: -75px;
+        transform: rotate(90deg);
+    }
+    
+    .next{
+        right: -75px;
+        transform: rotate(-90deg);
+    }
+    
+    .arrow{
+        width: 80px;
+    }
+    
+
+    .carrousel__nb{
+        position: absolute;
+        bottom: 25px;
+        color: white;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
 }

@@ -1,10 +1,41 @@
 .gallery {
-    margin-top: 50px;
-    padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px 60px;
-    margin-bottom: 1rem;
-    background-color: #F7F7F7;
-    border-radius: 25px;
+    margin: 20px auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 480px){
+    .gallery {
+        max-width: 700px;
+        margin: 20px auto;
+        margin-bottom: 1rem;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .gallery {
+        max-width: 1040px;
+        background-color: #F7F7F7;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .gallery {
+        margin: 40px auto;
+        max-width: 1240px;
+        gap: 40px;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .gallery {
+        margin: 50px auto;
+        gap: 50px 50px;
+        padding: 50px;
+    }
 }

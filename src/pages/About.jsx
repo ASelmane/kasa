@@ -4,7 +4,7 @@ import BannerImg from "../kalen-emsley-Bkci_8qcdvQ-unsplash.jpg";
 
 const About = () => {
     return (
-        <div className="container">
+        <div className="container about">
             <Banner img={BannerImg}></Banner>
             <DropdownLarge title="Fiabilité">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</DropdownLarge>
             <DropdownLarge title="Respect">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</DropdownLarge>

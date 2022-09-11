@@ -1,9 +1,16 @@
 .tag{
     background-color: #FF6060;
     color: white;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 142.6%;
-    padding: 3px 35px;
+    padding: 3px 15px;
+    white-space: nowrap;
     border-radius: 10px;
     text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+    .tag{
+        font-size: 18px;
+    }
 }

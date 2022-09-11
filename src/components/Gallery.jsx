@@ -11,6 +11,7 @@ const Gallery = () => {
                     {item.title}
                 </Thumb>
             ))}
+            {data.length % 2 === 0 ? <div className="thumb" /> : null}
         </section>
     );
 }

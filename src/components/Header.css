@@ -9,11 +9,11 @@ header .logo{
     width: 145px;
 }
 
-nav{
+header nav{
     width: 140px;
 }
 
-ul{
+header ul{
     display: flex;
     justify-content: flex-end;
     gap: 15px;
@@ -21,15 +21,15 @@ ul{
     padding: 0;
 }
 
-li{
+header li{
     list-style: none;
 }
 
-a:hover, a.active{
+header a:hover, header a.active{
     text-decoration: underline;
 }
 
-a{
+header a{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
@@ -37,6 +37,16 @@ a{
     line-height: 142.6%;
     text-align: right;
     color: #FF6060;
+}
+
+@media screen and (min-width: 480px){
+    header nav{
+        width: auto;
+    }
+
+    header ul{
+        gap: 30px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -51,15 +61,15 @@ a{
         width: auto;
     }
     
-    nav{
+    header nav{
         width: 300px;
     }
     
-    ul{
+    header ul{
         gap: 60px;
     }
     
-    a{
+    header a{
         text-transform: none;
         text-decoration: none;
         font-size: 24px;

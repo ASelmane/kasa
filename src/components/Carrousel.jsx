@@ -27,8 +27,8 @@ const Carrousel = ({ children }) => {
         <div className="carrousel">
             <img className="carrousel__image" src={children[currentIndex]} alt=""/>
             <div className="carrousel__control">
-                <img className="arrow_left" src={arrow} alt="" onClick={prev}/>
-                <img className="arrow_right" src={arrow} alt="" onClick={next}/>
+                <button className="prev" onClick={prev}><img className="arrow" src={arrow} alt="" /></button>
+                <button className="next" onClick={next}><img className="arrow" src={arrow} alt="" /></button>
                 <span className="carrousel__nb">{(currentIndex + 1) + "/" + (children.length)}</span>
             </div>
         </div>
