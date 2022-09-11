@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Thumb.css";
+import "../styles/Thumb.css";
 
 const Thumb = ({ id, src, children }) => {
     return (

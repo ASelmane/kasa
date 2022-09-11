@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
-import BannerImg from "../eric-muhr-P_XxsdVgtpQ-unsplash.jpg";
+import BannerImg from "../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg";
 
 const Home = () => {
     return (

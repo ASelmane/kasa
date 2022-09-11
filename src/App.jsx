@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Logement from "./pages/Logement";
 import NotFound from "./pages/NotFound";
-import "./App.css";
+import "./styles/App.css";
 import {
     BrowserRouter as Router,
     Route,

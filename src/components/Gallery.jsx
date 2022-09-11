@@ -1,7 +1,7 @@
-import "./Gallery.css";
+import "../styles/Gallery.css";
 import React from "react";
 import Thumb from "./Thumb";
-import data from "../data.json";
+import data from "../data/data.json";
 
 const Gallery = () => {
     return (

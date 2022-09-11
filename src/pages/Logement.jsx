@@ -2,9 +2,9 @@ import Dropdown from "../components/Dropdown";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
 import Carrousel from "../components/Carrousel";
-import data from "../data.json";
+import data from "../data/data.json";
 import { useParams, Navigate } from "react-router-dom";
-import "./Logement.css";
+import "../styles/Logement.css";
 
 const Logement = () => {
     const { id } = useParams();

@@ -1,6 +1,6 @@
-import Star from '../star.svg';
-import StarRate from '../star-rate.svg';
-import "./Rating.css";
+import Star from '../assets/star.svg';
+import StarRate from '../assets/star-rate.svg';
+import "../styles/Rating.css";
 
 const Rating = ({ rating }) => {
     const rate = [1, 2, 3, 4, 5];

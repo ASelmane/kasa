@@ -1,6 +1,6 @@
 import React from "react";
-import "./Carrousel.css";
-import arrow from "../arrow.svg";
+import "../styles/Carrousel.css";
+import arrow from "../assets/arrow.svg";
 
 const Carrousel = ({ children }) => {
     const [currentIndex, setCurrentIndex] = React.useState(0);

@@ -1,6 +1,6 @@
 import DropdownLarge from "../components/DropdownLarge";
 import Banner from "../components/Banner";
-import BannerImg from "../kalen-emsley-Bkci_8qcdvQ-unsplash.jpg";
+import BannerImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg";
 
 const About = () => {
     return (

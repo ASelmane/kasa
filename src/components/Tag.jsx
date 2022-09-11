@@ -1,5 +1,5 @@
 import React from "react";
-import "./Tag.css";
+import "../styles/Tag.css";
 
 const Tag = ({ children }) => {
     return (

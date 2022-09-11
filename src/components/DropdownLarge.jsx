@@ -1,6 +1,6 @@
 import React from "react";
-import "./DropdownLarge.css";
-import arrow from "../arrow.svg";
+import "../styles/DropdownLarge.css";
+import arrow from "../assets/arrow.svg";
 
 const DropdownLarge = ({ title, children }) => {
     const [isOpen, setIsOpen] = React.useState(false);
